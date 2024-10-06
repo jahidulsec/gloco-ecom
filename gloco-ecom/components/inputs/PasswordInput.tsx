@@ -1,0 +1,45 @@
+"use client";
+
+import React, { ComponentProps, useState } from "react";
+import { Input } from "../ui/input";
+import { Eye, EyeOff } from "lucide-react";
+import { Label } from "../ui/label";
+
+type PasswordInputProps = ComponentProps<"p"> & {
+  label?: string;
+};
+
+function PasswordInput({
+  children,
+  label = "Password",
+  ...props
+}: PasswordInputProps) {
+  const [showPassword, setShowPassword] = useState(false);
+
+  return (
+    <p className="relative" {...props}>
+      <Label htmlFor="password">{label}</Label>
+      <Input
+        type={!showPassword ? "password" : "text"}
+        name="password"
+        id="password"
+        className="mt-3"
+      />
+      <i
+        className="eye absolute bottom-[0.75rem] right-3 cursor-pointer"
+        onClick={() => {
+          setShowPassword(!showPassword);
+        }}
+      >
+        {showPassword ? (
+          <Eye className="size-4" />
+        ) : (
+          <EyeOff className="size-4" />
+        )}
+      </i>
+      {children}
+    </p>
+  );
+}
+
+export default PasswordInput;

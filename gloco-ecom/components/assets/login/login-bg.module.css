@@ -1,0 +1,13 @@
+@keyframes sliderMove {
+    0%, 100% {
+        transform: translateX(0.5rem);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+
+.animateSlider {
+    animation: sliderMove 1500ms ease-in-out infinite forwards;
+}

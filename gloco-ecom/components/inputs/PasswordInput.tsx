@@ -4,6 +4,7 @@ import React, { ComponentProps, useState } from "react";
 import { Input } from "../ui/input";
 import { Eye, EyeOff } from "lucide-react";
 import { Label } from "../ui/label";
+import { cn } from "@/lib/utils";
 
 type PasswordInputProps = ComponentProps<"p"> & {
   label?: string;
@@ -11,13 +12,14 @@ type PasswordInputProps = ComponentProps<"p"> & {
 
 function PasswordInput({
   children,
+  className,
   label = "Password",
   ...props
 }: PasswordInputProps) {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <p className="relative" {...props}>
+    <p className={cn("relative", className)} {...props}>
       <Label htmlFor="password">{label}</Label>
       <Input
         type={!showPassword ? "password" : "text"}

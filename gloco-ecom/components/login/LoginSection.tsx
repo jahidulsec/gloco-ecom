@@ -12,7 +12,7 @@ function LoginSection() {
       <section>
         <h2 className="text-xl font-semibold">Sign in to your account</h2>
         <p className="text-sm">
-          Not a member? <Link href={""} className="text-primary">Sign up now</Link>
+          Not a member? <Link href={"/sign-up"} className="text-primary">Sign up now</Link>
         </p>
       </section>
 

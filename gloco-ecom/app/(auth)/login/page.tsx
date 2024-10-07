@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 function LoginPage() {
   return (
-    <main className="grid grid-cols-1 sm:grid-cols-2 min-h-screen justify-center items-center">
+    <>
       {/* left */}
       <div className="justify-self-center hidden sm:block">
         <LoginBg />
@@ -19,7 +19,7 @@ function LoginPage() {
       <div className="bg-muted/40 h-full place-content-center">
         <LoginSection />
       </div>
-    </main>
+    </>
   );
 }
 

@@ -11,7 +11,7 @@ function LoginPage() {
   return (
     <>
       {/* left */}
-      <div className="justify-self-center hidden sm:block">
+      <div className="justify-self-center hidden md:block">
         <LoginBg />
       </div>
 

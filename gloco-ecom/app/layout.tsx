@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import ProgressProvider from "@/contexts/ProgressProvider";
 
@@ -8,6 +9,12 @@ const fontSans = FontSans({
   variable: "--font-sans",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
+const bebus = Bebas_Neue({
+  subsets: ['latin'],
+  variable: "--font-bebus",
+  weight: '400'
+})
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontSans.variable} antialiased`}>
+      <body className={`${fontSans.variable} ${bebus.variable} antialiased`}>
         <ProgressProvider>{children}</ProgressProvider>
       </body>
     </html>

@@ -4,7 +4,7 @@ import React from 'react'
 function Logo() {
   return (
     <div className='text-primary flex items-center gap-2'>
-        <AudioWaveform className='size-8' />
+        <AudioWaveform className='size-7' />
     </div>
   )
 }

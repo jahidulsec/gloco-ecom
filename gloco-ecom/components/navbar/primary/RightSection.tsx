@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { Heart, Search, ShoppingBag } from "lucide-react";
-import ButtonBadge from "../buttons/ButtonBadge";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../ui/sheet";
-import SideShoppingBag from "../shopping-bag/SideShoppingBag";
-import CustomButton from "../buttons/CustomButton";
+import ButtonBadge from "../../buttons/ButtonBadge";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../../ui/sheet";
+import SideShoppingBag from "../../shopping-bag/SideShoppingBag";
+import CustomButton from "../../buttons/CustomButton";
 
 function RightSection() {
   const [open, setOpen] = useState(false);

@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { AlignLeft, MapPinHouse, MonitorSmartphone, Store } from "lucide-react";
-import Logo from "../assets/logo/Logo";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../ui/sheet";
-import { ScrollArea } from "../ui/scroll-area";
+import Logo from "../../assets/logo/Logo";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../../ui/sheet";
+import { ScrollArea } from "../../ui/scroll-area";
 
 function LeftSection() {
   const [open, setOpen] = useState(false);

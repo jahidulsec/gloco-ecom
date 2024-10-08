@@ -1,7 +1,6 @@
 import React from "react";
 import { ScrollArea } from "../ui/scroll-area";
 import CurrencyText from "../heading/CurrencyText";
-import { Button } from "../ui/button";
 import CustomButton from "../buttons/CustomButton";
 import NoItem from "../assets/no-data/NoItem";
 

@@ -2,22 +2,38 @@
 
 import React, { useState } from "react";
 import { Button } from "../ui/button";
-import { Search, ShoppingBag } from "lucide-react";
+import { Heart, Search, ShoppingBag } from "lucide-react";
 import ButtonBadge from "../buttons/ButtonBadge";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../ui/sheet";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
 import SideShoppingBag from "../shopping-bag/SideShoppingBag";
+import CustomButton from "../buttons/CustomButton";
 
 function RightSection() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <section className="right">
+      <section className="right flex items-center gap-3">
+        <CustomButton
+          size={"sm"}
+          className="md:block hidden text-xs px-5 bg-transparent border border-primary text-primary hover:text-background"
+        >
+          Build your PC
+        </CustomButton>
+
         {/* search button */}
-        <Button variant={"text"} size={"icon"}>
+        <Button variant={"text"} size={"icon"} className="md:hidden">
           <Search />
         </Button>
+
+        <ButtonBadge
+          count={2}
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          <Heart />
+        </ButtonBadge>
 
         <ButtonBadge
           count={2}

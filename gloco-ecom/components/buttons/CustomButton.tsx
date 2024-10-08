@@ -13,6 +13,7 @@ type CustomButtonProps = ComponentProps<"button"> & {
     | "outline"
     | "secondary"
     | "ghost"
+    | "text"
     | null
     | undefined;
 };

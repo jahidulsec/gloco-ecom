@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "../ui/button";
-import { AlignLeft } from "lucide-react";
+import { AlignLeft, MapPinHouse, MonitorSmartphone, Store } from "lucide-react";
 import Logo from "../assets/logo/Logo";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../ui/sheet";
 import { ScrollArea } from "../ui/scroll-area";
@@ -12,12 +12,12 @@ function LeftSection() {
 
   return (
     <>
-      <section className="left flex items-center gap-1">
+      <section className="left flex items-center gap-3">
         {/* burgur icon */}
         <Button
           variant={"text"}
           size={"icon"}
-          className="icon"
+          className="icon md:hidden"
           onClick={() => {
             setOpen(true);
           }}
@@ -27,6 +27,19 @@ function LeftSection() {
 
         {/* logo */}
         <Logo />
+
+        {/* large screen menu */}
+        <div className="md:flex items-center gap-3 hidden ">
+          <Button variant={"text"} className="font-regular">
+            <MonitorSmartphone className="mr-2 size-4" /> Product
+          </Button>
+          <Button variant={"text"} className="font-regular">
+            <Store className="mr-2 size-4" /> About
+          </Button>
+          <Button variant={"text"} className="font-regular">
+            <MapPinHouse className="mr-2 size-4" /> Contact
+          </Button>
+        </div>
       </section>
 
       {/* sidebar */}
@@ -42,7 +55,9 @@ function LeftSection() {
             </SheetTitle>
           </SheetHeader>
           <ScrollArea className="p-6 min-h-[70vh]">
-            <h2 className="p-3 text-sm text-center bg-muted/50">All departments</h2>
+            <h2 className="p-3 text-sm text-center bg-muted/50">
+              All departments
+            </h2>
           </ScrollArea>
         </SheetContent>
       </Sheet>

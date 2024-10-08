@@ -1,9 +1,10 @@
+import { cn } from '@/lib/utils'
 import { AudioWaveform } from 'lucide-react'
-import React from 'react'
+import React, { ComponentProps } from 'react'
 
-function Logo() {
+function Logo({className, ...props}: ComponentProps<'div'>) {
   return (
-    <div className='text-primary flex items-center gap-2'>
+    <div {...props} className={cn('text-primary flex items-center gap-2', className)}>
         <AudioWaveform className='size-7' />
     </div>
   )

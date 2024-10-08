@@ -26,7 +26,7 @@ function CustomButton({
   ...props
 }: CustomButtonProps) {
   return (
-    <Button className={cn('rounded-full px-10', className)} {...props} variant={variant} size={size}>
+    <Button className={cn('rounded-full px-10 text-center', className)} {...props} variant={variant} size={size}>
       {isLoading && <Spinner className="mr-2" />}
       <span>{children}{isLoading && '...'}</span>
     </Button>

@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
 		fontFamily: {
-			bebus: 'var(--font-bebus)',
+			bangla: 'var(--font-bangla)',
 		},
   		colors: {
   			background: 'hsl(var(--background))',

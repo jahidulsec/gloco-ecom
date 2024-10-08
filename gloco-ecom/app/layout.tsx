@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
-import { Bebas_Neue } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import ProgressProvider from "@/contexts/ProgressProvider";
 
@@ -10,9 +10,9 @@ const fontSans = FontSans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const bebus = Bebas_Neue({
+const bebus = Hind_Siliguri({
   subsets: ['latin'],
-  variable: "--font-bebus",
+  variable: "--font-bangla",
   weight: '400'
 })
 

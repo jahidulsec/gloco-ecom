@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-    title: 'Sign up - Glocom',
+    title: 'Sign up - Waveform',
   }
 
 function SignUpPage() {

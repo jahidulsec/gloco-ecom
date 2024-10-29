@@ -16,13 +16,13 @@ function RightSection() {
       <section className="right flex items-center gap-3">
         <CustomButton
           size={"sm"}
-          className="md:block hidden text-xs px-5 bg-transparent border border-primary text-primary hover:text-background"
+          className="lg:block hidden text-xs px-5 bg-transparent border border-primary text-primary hover:text-background"
         >
           Build your PC
         </CustomButton>
 
         {/* search button */}
-        <Button variant={"text"} size={"icon"} className="md:hidden">
+        <Button variant={"text"} size={"icon"} className="lg:hidden">
           <Search />
         </Button>
 

@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <section className="flex gap-6">
       {/* left */}
-      <div className="-mt-6">
+      <div className="-mt-6 lg:block hidden">
         <CategoryMenu />
       </div>
 

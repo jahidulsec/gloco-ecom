@@ -17,7 +17,7 @@ function LeftSection() {
         <Button
           variant={"text"}
           size={"icon"}
-          className="icon md:hidden"
+          className="icon lg:hidden"
           onClick={() => {
             setOpen(true);
           }}
@@ -29,7 +29,7 @@ function LeftSection() {
         <Logo />
 
         {/* large screen menu */}
-        <div className="md:flex items-center gap-3 hidden ">
+        <div className="lg:flex items-center gap-3 hidden ">
           <Button variant={"text"} className="font-regular">
             <MonitorSmartphone className="mr-2 size-4" /> Product
           </Button>
@@ -55,7 +55,7 @@ function LeftSection() {
             </SheetTitle>
           </SheetHeader>
           <ScrollArea className="p-6 min-h-[70vh]">
-            <h2 className="p-3 text-sm text-center bg-muted/50">
+            <h2 className="p-3 text-sm text-center bg-muted/50 rounded-lg">
               All departments
             </h2>
           </ScrollArea>

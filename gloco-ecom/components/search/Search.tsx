@@ -49,10 +49,9 @@ function Search({ placeholder = "Search...", type='search', className }: { place
       </Label>
       <Button
       type="submit"
-        size={"icon"}
         className="absolute right-0 top-0 rounded-l-none"
       >
-        <SearchIcon className="size-4" />
+        Search
       </Button>
     </form>
   );

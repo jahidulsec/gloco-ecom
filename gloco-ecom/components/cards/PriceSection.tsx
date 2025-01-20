@@ -1,16 +1,24 @@
 import React from "react";
 import CurrencyText from "../heading/CurrencyText";
 
-function PriceSection() {
+function PriceSection({
+  prevPrice,
+  price,
+}: {
+  prevPrice?: number | null;
+  price: number;
+}) {
   return (
     <div className="price flex gap-3 items-center">
       {/* current price */}
-      <CurrencyText className="text-secondary text-lg" currency={5000} />
+      <CurrencyText className="text-secondary text-lg" currency={price} />
       {/* previous price */}
-      <CurrencyText
-        className="text-muted-foreground line-through text-xs"
-        currency={6000}
-      />
+      {prevPrice != null && (
+        <CurrencyText
+          className="text-muted-foreground line-through text-xs"
+          currency={prevPrice}
+        />
+      )}
     </div>
   );
 }
